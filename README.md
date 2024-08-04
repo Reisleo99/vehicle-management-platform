@@ -7,7 +7,7 @@ by Leonardo Reis
 * [Dependencies](#dependencies)
 * [Usage](#usage)
 * [Contact-Me](#contact-me)
-* [Contributors](#contributors)
+* [Walkthrough Video](#walkthrough-video)
 * [License](#license)
 
 ## Description
@@ -25,6 +25,8 @@ such as Start, accelerate, decelerate, stop, turn right or left.
 ## Contact-me
 * Name - Leonardo Reis
 * Github - [Reisleo99](https://github.com/Reisleo99)
+## Walkthrough Video
+https://watch.screencastify.com/v/haI1EXFyTMKZnmvpal7J
 ## License
 
 Licensed under the MIT license.
