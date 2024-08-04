@@ -21,6 +21,7 @@ class Truck extends Vehicle implements AbleToTow {
   ){
     super(vin, color, make, model, year, weight, topSpeed, wheels);
     this.towingCapacity = towingCapacity;
+    this.wheels = this.checkWheels(wheels);
   }
 
   tow(vehicleBeingTowed: Truck | Motorbike | Car): void {
@@ -39,6 +40,18 @@ class Truck extends Vehicle implements AbleToTow {
 
   override printDetails(): void {
     super.printDetails ();
+    console.log(
+      `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 3: ${this.wheels[2].getDiameter} inch with a ${this.wheels[2].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire`
+    );
     console.log(`Towing capacity: ${this.towingCapacity} lbs`);
   }
 }

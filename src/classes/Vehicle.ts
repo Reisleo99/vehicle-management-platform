@@ -36,7 +36,7 @@ class Vehicle implements Driveable {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
-    this.wheels = this.checkWheels(wheels);
+    this.wheels = wheels;
   }
 
   checkWheels(wheels: Wheel[]): Wheel[] {
@@ -46,7 +46,7 @@ class Vehicle implements Driveable {
       return wheels;
     }
   }
-
+  
   // Method to print vehicle details
   printDetails(): void {
     console.log(`Vehicle started: ${this.started}`);
@@ -58,19 +58,8 @@ class Vehicle implements Driveable {
     console.log(`Year: ${this.year}`);
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
-    console.log(
-      `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 3: ${this.wheels[2].getDiameter} inch with a ${this.wheels[2].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire`
-    );
   }
+  
 
   // Method to start the vehicle
   start(): void {

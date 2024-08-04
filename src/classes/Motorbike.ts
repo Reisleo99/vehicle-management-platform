@@ -14,8 +14,9 @@ class Motorbike extends Vehicle {
     wheels: Wheel[],
   ){
     super(vin, color, make, model, year, weight, topSpeed, wheels);
+    this.wheels = this.checkWheels(wheels)
   }
-// TODO: nao sabemos se vai funcionar para 2 rodas
+  
   override checkWheels(wheels: Wheel[]): Wheel[] {
     if (wheels.length !== 2) {
       return [new Wheel(), new Wheel()];
@@ -29,8 +30,13 @@ class Motorbike extends Vehicle {
   }
 
   override printDetails(): void {
-    // TODO: Checar o fato da motorbike ter duas rodas apenas
     super.printDetails ();
+    console.log(
+      `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
+    );
+    console.log(
+      `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
+    );
   }
 }
 
