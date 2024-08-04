@@ -26,7 +26,7 @@ such as Start, accelerate, decelerate, stop, turn right or left.
 * Name - Leonardo Reis
 * Github - [Reisleo99](https://github.com/Reisleo99)
 ## Walkthrough Video
-https://watch.screencastify.com/v/haI1EXFyTMKZnmvpal7J
+https://app.screencastify.com/v3/watch/PDjIL4XWLEe3juleaatI
 ## License
 
 Licensed under the MIT license.
