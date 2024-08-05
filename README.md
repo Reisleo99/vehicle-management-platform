@@ -1,6 +1,6 @@
 # Vehicle Management Platform
 by Leonardo Reis
-![Github License](https://img.shields.io/badge/license--blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Table of Contents
 * [Description](#description)
 * [Technologies](#technologies)
